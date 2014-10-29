@@ -1,0 +1,17 @@
+%nav.navbar.navbar-default.navbar-fixed-top#main-navbar
+  .contaner-fluid
+    .navbar-header 
+      = link_to root_path do
+        = image_tag "logo.png", class: 'navbar-logo navbar-logo-big img-responsive'
+      %button.navbar-toggle.collapsed{ 'data-toggle' => 'collapse',  'data-target' => '#menu' }
+        %i.icon.icon-add-to-list
+
+    .collapse.navbar-collapse.navbar-right#menu
+      %ul.nav.navbar-nav
+        %li{ :class => ("active" if params[:action] == 'for_vendors') } 
+          = link_to 'For Vendors', for_vendors_path
+        %li{ :class => ("active" if params[:action] == 'pricing') } 
+          = link_to 'Pricing', pricing_path
+        %li{ :class => ("active" if params[:action] == 'contact_us') } 
+          = link_to 'Contact us', contact_us_path
+}
