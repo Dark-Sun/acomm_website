@@ -6,9 +6,13 @@
 / </div>
 
 
-.flowplayer{ 'data-ratio' => '0.5625' }
-  %video
-    %source{:type => 'video/webm', :src => "movie.mp4" }
+/ .flowplayer{ 'data-ratio' => '0.5625' }
+/   %video
+/     %source{:type => 'video/webm', :src => "movie.mp4" }
+
+.youtube-container
+  .video-container
+    %iframe{ :width => '533px', :height => "300", :src => "//www.youtube.com/embed/4hynZ8Il6tE?modestbranding=1&rel=0&showinfo=0&nologo=1",:frameborder => "0", :allowfullscreen => "true", :theme => "light" }
 
 %p
   %br

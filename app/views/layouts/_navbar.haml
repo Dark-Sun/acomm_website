@@ -1,10 +1,10 @@
 %nav.navbar.navbar-default.navbar-fixed-top#main-navbar
-  .contaner-fluid
+  .contaner-fluid.clearfix
     .navbar-header 
       = link_to root_path do
         = image_tag "logo.png", class: 'navbar-logo navbar-logo-big img-responsive'
-      %button.navbar-toggle.collapsed{ 'data-toggle' => 'collapse',  'data-target' => '#menu' }
-        %i.icon.icon-add-to-list
+    %button.navbar-toggle.collapsed{ 'data-toggle' => 'collapse',  'data-target' => '#menu' }
+      %i.icon.icon-add-to-list
 
     .collapse.navbar-collapse.navbar-right#menu
       %ul.nav.navbar-nav
