@@ -12,7 +12,7 @@
 
 .youtube-container
   .video-container
-    %iframe{ :width => '533px', :height => "300", :src => "//www.youtube.com/embed/4hynZ8Il6tE?modestbranding=1&rel=0&showinfo=0&nologo=1",:frameborder => "0", :allowfullscreen => "true", :theme => "light" }
+    %iframe{ :width => '533px', :height => "300", :src => "//www.youtube.com/embed/74HmIv109tM?modestbranding=1&rel=0&showinfo=0&nologo=1",:frameborder => "0", :allowfullscreen => "true", :theme => "light" }
 
 %p
   %br
@@ -24,6 +24,22 @@
   vendors, or as we call them, the Pilots.
 
 .row.text-center
+  .col-xs-12.col-sm-4
+    = link_to for_vendors_path do
+      = image_tag "for_vendors_image.jpg", class: 'img-responsive img-center'
+    %h4 
+      = link_to "For Vendors", for_vendors_path
+  .col-xs-12.col-sm-4
+    = link_to learn_path do
+      = image_tag "learn_androcommerce_image.jpg", class: 'img-responsive img-center'
+    %h4 
+      = link_to "Learn Androcommerce", learn_path
+  .col-xs-12.col-sm-4
+    = link_to advertise_path do
+      = image_tag "adevrtise_image.jpg", class: 'img-responsive img-center'
+    %h4 
+      = link_to "Advertise your storefront", advertise_path
+.row.text-center
   .col-sm-4.col-xs-12
     = image_tag "Pear666s.png", class: 'img-responsive img-phone'
     %h3 Your storefront on iPhone
@@ -34,10 +50,10 @@
     = image_tag "warehouse.png", class: 'img-responsive img-phone'
     %h3 Your vendor app on Android
 
-.row.col-xs-12.text-center
-  = image_tag "androcommercePC.png", class: 'img-responsive img-phone'
-  %h3 Your storefront on Androcommerce Market Website
+.row.text-center
+  .col-xs-12
+    = image_tag "androcommercePC.png", class: 'img-responsive img-phone'
+    %h3 Your storefront on Androcommerce Market Website
 
 
-.col-xs-12.text-center
-  = link_to "Enroll to be among first Androcommerce Vendors, or as we call them, Pilots!", 'http://androcommerce.com', class: 'btn btn-default btn-lg btn-enroll'
+= render 'shared/enroll_button'

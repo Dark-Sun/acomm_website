@@ -12,7 +12,17 @@ class PagesController < ApplicationController
 	def contact_us
 	end
 
+	def learn
+	end
+
 	def under_construction
 	end
 	
+	def existing_online
+	end
+
+	def enroll
+		@adopter = Adopter.new
+	end
+
 end

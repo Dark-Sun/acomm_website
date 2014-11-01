@@ -61,6 +61,13 @@ div.text > ul > li {
 .img-acomm {
 	margin-left: -700px;
 }
+
+@media (min-width: 768px) {
+	.img-padding-top {
+		padding-top: 70px;
+	}
+}
+
 #mission-right {
 	margin-top: 80px;
 }
@@ -121,6 +128,10 @@ div.text > ul > li {
 	margin: 0 auto;
 }
 
+.img-center {
+	margin: 0 auto;
+}
+
 #map {
 	height: 400px;
 	width: 100%;
@@ -145,6 +156,11 @@ div.text > ul > li {
 .btn-enroll {
 	margin-top: 15px;
 	max-width: 100%;
+	white-space: pre-wrap; /* css-3 */    
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */    
+    white-space: -o-pre-wrap; /* Opera 7 */    
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
 }
 
 @media (max-width: 1000px) {

@@ -1,0 +1,61 @@
+.col-xs-12.col-sm-8
+  %h2 Now we are at stage of Early Adopters! What does it mean?
+  %p 
+    This means that we're looking for 100 vendors to be the first users of Androcommerce. If you will be selected you will earn the following perks:
+    %br 
+    .text
+      %ul
+        %li - free use of Androcommerce without limits during 1 year
+        %li - free generation of iOS app of your storefront
+        %li - customization of look and feel of your storefront by our developers for free
+        %li - help in uploading your storefronts to App Store and Play Market
+
+    %br
+    %br
+
+    %h4 So...Are you ready? Just fill the form:
+
+.col-sm-4.hidden-xs
+  = image_tag "flag-acoom.gif", width: 300
+
+.col-xs-12
+  = form_for @adopter do |f|
+    .col-sm-6
+      .form-group
+        = f.label :name
+        = f.text_field :name, class: 'form-control'
+      .form-group
+        = f.label :country
+        = f.text_field :country, class: 'form-control'
+    .col-sm-6
+      .form-group
+        = f.label :email
+        = f.email_field :email, class: 'form-control'
+      .form-group
+        = f.label :city
+        = f.text_field :city, class: 'form-control'
+
+    .col-sm-6
+      %h4 How can you describe yourself as a vendor?
+      .form-group
+        = f.check_box :existing_local_storefront
+        = f.label :existing_local_storefront
+      .form-group
+        = f.check_box :service_provider
+        = f.label :service_provider 
+      .form-group
+        = f.check_box :digital_content_seller
+        = f.label :digital_content_seller  
+      .form-group
+        = f.check_box :future_or_beginning_vendor
+        = f.label :future_or_beginning_vendor   
+
+      .form-group
+        = f.label "Website or social page of your business"
+        = f.text_field :website, class: 'form-control'
+    
+    .col-sm-6
+      %br
+      %br
+      %br
+      = f.submit "Register and turn on engines of Androcommerce", class: 'btn-default btn-lg btn-enroll'
