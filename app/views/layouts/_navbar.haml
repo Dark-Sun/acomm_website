@@ -1,8 +1,8 @@
 %nav.navbar.navbar-default.navbar-fixed-top#main-navbar
-  .contaner-fluid.clearfix
-    .navbar-header 
+  .contaner-fluid
+    .navbar-header.clearfix 
       = link_to root_path do
-        = image_tag "logo.png", class: 'navbar-logo navbar-logo-big img-responsive'
+        = image_tag "logo.png", class: 'navbar-logo navbar-logo-big'
     %button.navbar-toggle.collapsed{ 'data-toggle' => 'collapse',  'data-target' => '#menu' }
       %i.icon.icon-add-to-list
 
@@ -13,5 +13,5 @@
         %li{ :class => ("active" if params[:action] == 'pricing') } 
           = link_to 'Pricing', pricing_path
         %li{ :class => ("active" if params[:action] == 'contact_us') } 
-          = link_to 'Contact us', contact_us_path
+          = link_to 'Contact us', 'http://droidbrew.com'
 }

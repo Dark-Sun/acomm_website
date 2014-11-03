@@ -15,6 +15,8 @@ Rails.application.routes.draw do
   get '/begginers'          => 'pages#begginers',         as: 'beginners'
   get '/unsure'             => 'pages#unsure',            as: 'unsure'
   
+  get '/update_browser'    => 'pages#update_browser',     as: 'update_browser'
+  
   get '/under_construction' => 'pages#under_construction', as: 'under_construction'
 
   resources :adopters, only: [:create]

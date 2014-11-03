@@ -1,10 +1,10 @@
 %h1 Who did we build it for
 %p
-  Foremost we designed Androcommerce as attractive solution for  small business and start-ups.
-  Traditionally e-commerce providers targeted large sippliers and well established brands.
-  But not all e-commerce platforms were born equal. Instead a global commerce which is trully global: trade bariers are destroyed, discrimination is erased. We invite you to join on this exciting journey regardless of your business pedigree, geographical location, or size of your balance sheet. Are you having your drreams in Brazil, England, Africa or China? Common in, join us, together we can make it come true!
+  Foremost we designed Androcomerce as attractive solution for small businesses and start-ups. Traditionally e-commerce providers targeted large suppliers and well established brands. But not all e-commerce platforms were born equal. Instead we imagined a global commerce which is truly global: trade barriers are destroyed, discrimination is erased. We invite you to join us on this exciting journey regardless of pedigree of your business, its geographical location, or size of your balance sheet. Are you having your dreams in Brazil, England, Africa or China? Common in, join us, together we can make it come true.
 
-/ %h1 How does it work
+%h1 How does it work
+= image_tag "steps_chart.png", class: 'img img-responsive hidden-xs center-block'
+= image_tag "steps_chart_vertical.png", class: 'img img-responsive visible-xs center-block'
 / .step-circle
 /   .step-circle-text
 /     Download Vendor App
@@ -28,19 +28,37 @@
 %h1 Still thinking?
 .col-xs-12.row.text-center
   .col-sm-4.col-xs-12
-    = link_to "Benefits and ideas for existing brick-and mortare business", existing_vendors_path
+    = link_to  existing_vendors_path do
+      = image_tag "pirate.jpg", class: 'img-responsive center-block'
+    %h4 
+      = link_to "Benefits and ideas for existing brick-and mortare business", existing_vendors_path
   .col-sm-4.col-xs-12
-    = link_to "Benefits and ideas for existing on-line business", existing_online_path
+    = link_to  existing_online_path do
+      = image_tag "crafts.jpg", class: 'img-responsive center-block'
+    %h4  
+      = link_to "Benefits and ideas for existing on-line business", existing_online_path
   .col-sm-4.col-xs-12
-    = link_to "Benefits and ideas for existing service providers", service_providers_path
+    = link_to service_providers_path do
+      = image_tag "droids.jpg", class: 'img-responsive center-block'
+    %h4 
+      = link_to "Benefits and ideas for existing service providers", service_providers_path
 
 .col-xs-12.row.text-center
   .col-sm-4.col-xs-12
-    = link_to "Benefits for on-line content providers", content_providers_path
+    = link_to  content_providers_path do
+      = image_tag "droid_baby.jpg", class: 'img-responsive center-block'
+    %h4 
+      = link_to "Benefits for on-line content providers", content_providers_path
   .col-sm-4.col-xs-12
-    = link_to "Benefits for begginning vendors", beginners_path
+    = link_to  beginners_path do
+      = image_tag "myaso.jpg", class: 'img-responsive center-block'
+    %h4 
+      = link_to "Benefits for begginning vendors", beginners_path
   .col-sm-4.col-xs-12
-    = link_to "For those who is still unsure", unsure_path
+    = link_to  unsure_path do
+      = image_tag "onlineBiz.jpg", class: 'img-responsive center-block'
+    %h4 
+      = link_to "For those who is still unsure", unsure_path
 
 %br
 

@@ -25,4 +25,8 @@ class PagesController < ApplicationController
 		@adopter = Adopter.new
 	end
 
+	def update_browser
+		render :layout => false
+	end
+
 end

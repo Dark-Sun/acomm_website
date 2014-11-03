@@ -13,7 +13,13 @@
     = csrf_meta_tags
 
     %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" }
+    %meta{ "http-equiv" => "X-UA-Compatible", :content => "IE=edge" }
 
+    = javascript_include_tag 'respond', 'data-turbolinks-track' => true   
+    = javascript_include_tag 'html5shiv.min.js'
+    <!--[if lte IE 8]>
+    %link{ :rel => "stylesheet", :href => "http://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed)" }
+    <![endif]-->
   %body
     = render 'layouts/navbar'
     #content.clearfix

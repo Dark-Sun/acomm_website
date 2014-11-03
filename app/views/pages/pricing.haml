@@ -1,50 +1,49 @@
 %h2 Pricing model
-%table.table
+%table.table.table-bordered
   %thead
     %tr
-      %th Parameter
-      %th Free Plan
-      %th Payments
+      %th.text-center Parameter
+      %th.text-center Free Plan
+      %th.text-center Payments
     %tbody
       %tr
         %td Download of Vendor app
-        %td Free
-        %td -
+        %td.text-center{ :colspan => "2" } Free
       %tr
-        %td Number of storefronts per google account
-        %td 1
-        %td 9$ per mpnth for each additional
+        %td Number of storefronts per Google account
+        %td.text-center 1
+        %td $9 per month for each additional
       %tr
         %td Number of products or services
-        %td 20
-        %td 9$ per month per each additional 50 items
+        %td.text-center Up to 20
+        %td $9 per month per each additional 50 items
       %tr
         %td Number of storefront users
-        %td 500
-        %td 9$ per month per each additional 500 users
+        %td.text-center Up to 500
+        %td $9 per month per each additional 500 users
       %tr
         %td Dedicated page of storefront and its products on Androcommerce Market
-        %td yes
-        %td -
+        %td.text-center{ :colspan => "2"} Included
       %tr
-        %td Dedicated Android app for storefront, ready to Play Market
-        %td yes
-        %td -
+        %td Dedicated Android app for storefront; aviable for publishing on Play Market
+        %td.text-center{ :colspan => "2"} Included
       %tr 
         %td Dedicated iOS Storefront app, ready for App Store
-        %td no
-        %td 99$
+        %td.text-center N/A
+        %td.text-center $99
+      %tr 
+        %td Catalogue bulk upload facility
+        %td.text-center N/A
+        %td.text-center $99
       %tr
-        %td Maitainance of servers
-        %td yes 
-        %td -
+        %td Maitainance of backend server infrastructure
+        %td.text-center{ :colspan => "2"} Included 
       %tr 
-        %td Tech Support via email
-        %td 9 a.m. - 9 p.m. ET, Mon-Fri
-        %td -
+        %td Tech support via email
+        %td.text-center{ :colspan => "2" } 9 a.m. - 9 p.m. ET, Mon-Fri
       %tr 
-        %td Tech Consulting, Customization and Custom Development
-        %td no
-        %td Will be estimated on your request
+        %td Tech consulting, tailor-made customization and development
+        %td.text-center No
+        %td.text-center Estimates on request
 
 = render 'shared/enroll_button'
