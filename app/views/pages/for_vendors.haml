@@ -3,63 +3,99 @@
   Foremost we designed Androcomerce as attractive solution for small businesses and start-ups. Traditionally e-commerce providers targeted large suppliers and well established brands. But not all e-commerce platforms were born equal. Instead we imagined a global commerce which is truly global: trade barriers are destroyed, discrimination is erased. We invite you to join us on this exciting journey regardless of pedigree of your business, its geographical location, or size of your balance sheet. Are you having your dreams in Brazil, England, Africa or China? Common in, join us, together we can make it come true.
 
 %h1 How does it work
-= image_tag "steps_chart.png", class: 'img img-responsive hidden-xs center-block'
-= image_tag "steps_chart_vertical.png", class: 'img img-responsive visible-xs center-block'
-/ .step-circle
-/   .step-circle-text
-/     Download Vendor App
-/ %em.icon-chevron-thin-right.huge-icon
-/ .step-circle
-/   .step-circle-text
-/     Create new store
-/ %em.icon-chevron-thin-right.huge-icon
-/ .step-circle
-/   .step-circle-text
-/     Populate store catalogue with doods or services
-/ %em.icon-chevron-thin-right.huge-icon
-/ .step-circle
-/   .step-circle-text
-/   Publish the Storefront app
-/ %em.icon-chevron-thin-right.huge-icon
-/ .step-circle
-/   .step-circle-text
-/     Promote your Storefront app 
+=# image_tag "steps_chart.png", class: 'img img-responsive hidden-xs center-block'
+=# image_tag "steps_chart_vertical.png", class: 'img img-responsive visible-xs center-block'
+
+.row.hidden-xs
+  .col-step-circle.col-no-margin
+    %button.btn-invisible{ 'data-toggle' => "modal", 'data-target' => "#modal1" }
+      = image_tag "step1.png", class: 'img-responsive img-inline'
+  .col-step-circle.col-no-margin
+    %button.btn-invisible{ 'data-toggle' => "modal", 'data-target' => "#" }
+      = image_tag "step2.png", class: 'img-responsive img-inline'
+  .col-step-circle.col-no-margin
+    %button.btn-invisible{ 'data-toggle' => "modal", 'data-target' => "#modal3" }
+      = image_tag "step3.png", class: 'img-responsive img-inline'
+  .col-step-circle.col-no-margin
+    %button.btn-invisible{ 'data-toggle' => "modal", 'data-target' => "#modal4" }
+      = image_tag "step4.png", class: 'img-responsive img-inline'
+  .col-step-circle.col-no-margin
+    %a.btn-invisible{ :href => '/advertise' }
+      = image_tag "step5.png", class: 'img-responsive img-inline'
+
+.row.visible-xs
+  %button.btn-invisible.btn-circle-vert{ 'data-toggle' => "modal", 'data-target' => "#modal1" }
+    = image_tag "step1_vert.png", class: 'img-responsive img-center'
+  %button.btn-invisible.btn-circle-vert{ 'data-toggle' => "modal", 'data-target' => "#" }
+    = image_tag "step2_vert.png", class: 'img-responsive img-center'
+  %button.btn-invisible.btn-circle-vert{ 'data-toggle' => "modal", 'data-target' => "#modal3" }
+    = image_tag "step3_vert.png", class: 'img-responsive img-center'
+  %button.btn-invisible.btn-circle-vert{ 'data-toggle' => "modal", 'data-target' => "#modal4" }
+    = image_tag "step4_vert.png", class: 'img-responsive img-center'
+  %a.btn-invisible.btn-circle-vert{ :href => '/advertise' }
+    = image_tag "step5_vert.png", class: 'img-responsive img-center'
 
 %h1 Still thinking?
 .col-xs-12.row.text-center
   .col-sm-4.col-xs-12
     = link_to  existing_vendors_path do
-      = image_tag "pirate.jpg", class: 'img-responsive center-block'
+      = image_tag "pirate.jpg", class: 'img-responsive center-block', width: '90%'
     %h4 
       = link_to "Benefits and ideas for existing brick-and mortare business", existing_vendors_path
   .col-sm-4.col-xs-12
     = link_to  existing_online_path do
-      = image_tag "crafts.jpg", class: 'img-responsive center-block'
+      = image_tag "crafts.jpg", class: 'img-responsive center-block', width: '90%'
     %h4  
       = link_to "Benefits and ideas for existing on-line business", existing_online_path
   .col-sm-4.col-xs-12
     = link_to service_providers_path do
-      = image_tag "droids.jpg", class: 'img-responsive center-block'
+      = image_tag "droids.jpg", class: 'img-responsive center-block', width: '90%'
     %h4 
       = link_to "Benefits and ideas for existing service providers", service_providers_path
 
 .col-xs-12.row.text-center
   .col-sm-4.col-xs-12
     = link_to  content_providers_path do
-      = image_tag "droid_baby.jpg", class: 'img-responsive center-block'
+      = image_tag "droid_baby.jpg", class: 'img-responsive center-block', width: '90%'
     %h4 
       = link_to "Benefits for on-line content providers", content_providers_path
   .col-sm-4.col-xs-12
     = link_to  beginners_path do
-      = image_tag "myaso.jpg", class: 'img-responsive center-block'
+      = image_tag "myaso.jpg", class: 'img-responsive center-block', width: '90%'
     %h4 
       = link_to "Benefits for begginning vendors", beginners_path
   .col-sm-4.col-xs-12
     = link_to  unsure_path do
-      = image_tag "onlineBiz.jpg", class: 'img-responsive center-block'
+      = image_tag "onlineBiz.jpg", class: 'img-responsive center-block', width: '90%'
     %h4 
       = link_to "For those who is still unsure", unsure_path
 
 %br
+
+.modal.fade#modal1
+  .modal-dialog
+    .modal-content
+      .modal-body
+        %h4 We're in Stage of Early Adopters.
+        %h4 Please subscribe to Early Adopters Program to receive Vendor App for Android.
+
+.modal.fade#modal2
+  .modal-dialog
+    .modal-content
+      .modal-body
+        Create new shop screenshot
+
+.modal.fade#modal3
+  .modal-dialog{ :style => "width: 250px; margin: 0 auto;" }
+    .modal-content
+      .modal-body
+        = image_tag "Andr666s.png", height: 400, class: 'img-center'
+
+.modal.fade#modal4
+  .modal-dialog
+    .modal-content
+      .modal-body
+        %h4 We're in stage of Early Adopters. 
+        %h4 If you will be selected to this group - your Android storefront will be generated automatically
 
 = render 'shared/enroll_button'

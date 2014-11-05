@@ -10,6 +10,6 @@ class ApplicationController < ActionController::Base
   before_action :check_browser
 
   def check_browser
-  	redirect_to update_browser_path if browser.ie? && browser.version < '8' && params[:action] != 'update_browser'
+  	# redirect_to update_browser_path if browser.ie? && browser.version < '8' && params[:action] != 'update_browser'
   end
 end

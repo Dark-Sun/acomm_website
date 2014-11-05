@@ -1,20 +1,23 @@
-%h2 Benefits for existing on-line content providers
+%h1 Benefits for existing on-line content providers
 %p
-  Go viral.
+  %b Go viral.
   %br
   Are you into hi-res music, e-books, video training? Or perhaps you are a band and want to sell to your funs directly? Androcommerse can help you. We take your original content, multiply it by popularity of smartphones and tablets to make you super viral. Did you know that your fun can re-tweet the store-front link or share your QR-code with another fun? Now you do. But don't let us down, be social! If you are a writer, share your progress on upcoming bestseller; if you are a musician, then share your new album samples. Perhaps share in hi-res. Heck, share in DXD; share your view on specific DAC, rip the referral proceeds directly from the manufacturer!
   %br
-  You can organize your events and sell tickets! You can raffle tickets to your events using Inbound Marketing feature!
+  %br
+  You can organize your events and sell tickets! You can raffle tickets to your events using 
+  = link_to "Inbound Marketing ", '/advertise#inbound_marketing'
+  feature!
+  %br
   %br 
   You can publish announcements about your performance or master class directly through your storefront app. You can surprise your funs with direct messages and greetings.
 
 .col-sm-4.hidden-xs
-  = image_tag "acomm_ship.png", class: 'img-responsive'
+  = image_tag "meatmincer.gif", class: 'img-responsive', height: "200px"
 
+%h2 Special features for existing service providers
 .col-xs-12.col-sm-8.text
   %br
-  %p
-    = "Special features for existing service providers"
   %p
     %ul 
       %li 
@@ -22,4 +25,9 @@
       %li
         = "- QR-code for promoting of storefront app using posters, t-shirts etc"
       %li 
-        = "- Inbound Marketing"
+        = link_to "- Inbound Marketing", '/advertise#inbound_marketing'
+      %br
+      %br
+      %br
+
+= render 'shared/enroll_button'

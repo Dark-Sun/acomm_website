@@ -19,5 +19,5 @@ Rails.application.routes.draw do
   
   get '/under_construction' => 'pages#under_construction', as: 'under_construction'
 
-  resources :adopters, only: [:create]
+  resources :adopters, only: [:index, :create]
 end

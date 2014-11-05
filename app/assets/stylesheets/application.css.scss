@@ -109,16 +109,52 @@ div.text > ul > li {
 
 }
 
+ul.bulleted-list > li {
+	list-style-type: disc !important;
+}
+
 .flowplayer {
 	max-width: 600px;
 	display: block !important;
 	margin: 0 auto;
 }
 
+.img-inline {
+	display: inline-block;
+}
+
+.btn-invisible {
+	background: transparent;
+	border: none;
+	&:focus {
+		border: none;
+		outline: none;
+	}
+}
+
+.btn-circle-vert {
+	display: block;
+	margin: 0 auto;
+}
+
+.footer-link {
+	color: white;
+	text-decoration: underline;
+	&:hover {
+		color: white;
+	}
+}
+
+.col-step-circle {
+	width: 19%;
+	display: inline-block;
+}
+
 .youtube-container {
 	max-width: 600px;
 	width: 100%;
 	margin: 0 auto;
+	margin-top: 50px;
 }
 .video-container {
     position: relative;
@@ -145,6 +181,11 @@ div.text > ul > li {
 	margin: 0 auto;
 }
 
+div.col-no-margin {
+	margin: 0 !important;
+	padding: 0;
+}
+
 #map {
 	height: 400px;
 	width: 100%;
@@ -153,11 +194,14 @@ div.text > ul > li {
 
 .btn-default {
 	border-radius: 0;
-	border: 1px solid $secondary-color;
-	color: $secondary-color;
+	border: 1px solid #8BC34A;
+	color: white;
+	border-radius: 30px;
 	transition: 0.2s;
+	background-color: #8BC34A;
 	&:hover {
-		background-color: $secondary-color;
+		border: 1px solid #7CB342;
+		background-color: #7CB342;
 		color: white;
 	}
 }

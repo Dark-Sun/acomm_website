@@ -1,20 +1,20 @@
-%h2 Benefits for existing service providers
+%h1 Benefits for existing service providers
 %p
-  We can help your services sell! 
+  %b We can help your services sell! 
   %br
   You may want to create a catalogue of services you offer, link them to the calendar so the client can book his slot from his mobile. Androcomerce supports all of it. Say you are a golf pro, or the master of underground simulator swingery - you can publish practicing slots, or advertise the times you are available for coaching. Why not offer a package discount? Your schedule can be filled directly by your customers; you will save on front-desk costs.
   %br
-  You can sell both services and accompanying products.
+  %br
+  %b You can sell both services and accompanying products.
   %br
   Also you can list different calendar slots against the item in your catalogue. This will let client chose what better suits them based on your availability.
 
 .col-sm-4.hidden-xs
   = image_tag "acomm_ship.png", class: 'img-responsive'
 
+%h2 Special features for existing service providers
 .col-xs-12.col-sm-8.text
   %br
-  %p
-    = "Special features for existing service providers"
   %p
     %ul 
       %li
@@ -26,4 +26,9 @@
       %li
         = "- QR-code for promoting of storefront app using posters, t-shirts etc"
       %li 
-        = "- Inbound Marketing"
+        = link_to "- Inbound Marketing", '/advertise#inbound_marketing'
+      %br
+      %br
+      %br
+
+= render 'shared/enroll_button'

@@ -1,0 +1,39 @@
+= link_to "Download CSV", "/adopters.csv"
+%table.table.table-bordered
+  %thead
+    %tr
+      %th.text-center Name
+      %th.text-center Email
+      %th.text-center Country
+      %th.text-center City
+      %th.text-center Website
+      %th.text-center Existing local storefront?
+      %th.text-center Service provider?
+      %th.text-center Digital Content seller?
+      %th.text-center Future pr beginning vendor?
+      %th.text-center Created
+    %tbody
+      - @adopters.each do |adopter|
+        %tr
+          %td 
+            = adopter.name
+          %td 
+            = adopter.email
+          %td 
+            = adopter.country
+          %td 
+            = adopter.city
+          %td 
+            = adopter.website
+          %td 
+            = adopter.existing_local_storefront
+          %td 
+            = adopter.service_provider
+          %td 
+            = adopter.digital_content_seller
+          %td 
+            = adopter.future_or_beginning_vendor
+          %td 
+            = adopter.created_at
+            
+     
