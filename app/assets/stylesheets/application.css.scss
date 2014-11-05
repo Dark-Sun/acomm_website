@@ -148,6 +148,9 @@ ul.bulleted-list > li {
 .col-step-circle {
 	width: 19%;
 	display: inline-block;
+	a {
+		display: inline-block;
+	}
 }
 
 .youtube-container {
@@ -208,27 +211,27 @@ div.col-no-margin {
 
 .btn-lg {
 	font-size: 24px;
+	line-height: 24px;
 }
 
 .btn-enroll {
 	margin-top: 15px;
-	max-width: 100%;
-	white-space: pre-wrap; /* css-3 */    
-    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
-    white-space: -pre-wrap; /* Opera 4-6 */    
-    white-space: -o-pre-wrap; /* Opera 7 */    
-    word-wrap: break-word; /* Internet Explorer 5.5+ */
+	width: 90%;
+	white-space:normal; 
 }
 
 @media (max-width: 1000px) {
 	.btn-lg {
-		font-size: 18px;
+		font-size: 16px;
 	}
 }
 
 @media (max-width: 700px) {
 	.btn-lg {
 		font-size: 14px;
+	}
+	.btn-enroll {
+		width: 100%;
 	}
 }
 

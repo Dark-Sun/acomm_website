@@ -8,29 +8,29 @@
 
 .row.hidden-xs
   .col-step-circle.col-no-margin
-    %button.btn-invisible{ 'data-toggle' => "modal", 'data-target' => "#modal1" }
+    %a.btn-invisible{ 'data-toggle' => "modal", 'data-target' => "#modal1" }
       = image_tag "step1.png", class: 'img-responsive img-inline'
   .col-step-circle.col-no-margin
-    %button.btn-invisible{ 'data-toggle' => "modal", 'data-target' => "#" }
+    %a.btn-invisible{ 'data-toggle' => "modal", 'data-target' => "#" }
       = image_tag "step2.png", class: 'img-responsive img-inline'
   .col-step-circle.col-no-margin
-    %button.btn-invisible{ 'data-toggle' => "modal", 'data-target' => "#modal3" }
+    %a.btn-invisible{ 'data-toggle' => "modal", 'data-target' => "#modal3" }
       = image_tag "step3.png", class: 'img-responsive img-inline'
   .col-step-circle.col-no-margin
-    %button.btn-invisible{ 'data-toggle' => "modal", 'data-target' => "#modal4" }
+    %a.btn-invisible{ 'data-toggle' => "modal", 'data-target' => "#modal4" }
       = image_tag "step4.png", class: 'img-responsive img-inline'
   .col-step-circle.col-no-margin
     %a.btn-invisible{ :href => '/advertise' }
       = image_tag "step5.png", class: 'img-responsive img-inline'
 
 .row.visible-xs
-  %button.btn-invisible.btn-circle-vert{ 'data-toggle' => "modal", 'data-target' => "#modal1" }
+  %a.btn-invisible.btn-circle-vert{ 'data-toggle' => "modal", 'data-target' => "#modal1" }
     = image_tag "step1_vert.png", class: 'img-responsive img-center'
-  %button.btn-invisible.btn-circle-vert{ 'data-toggle' => "modal", 'data-target' => "#" }
+  %a.btn-invisible.btn-circle-vert{ 'data-toggle' => "modal", 'data-target' => "#" }
     = image_tag "step2_vert.png", class: 'img-responsive img-center'
-  %button.btn-invisible.btn-circle-vert{ 'data-toggle' => "modal", 'data-target' => "#modal3" }
+  %a.btn-invisible.btn-circle-vert{ 'data-toggle' => "modal", 'data-target' => "#modal3" }
     = image_tag "step3_vert.png", class: 'img-responsive img-center'
-  %button.btn-invisible.btn-circle-vert{ 'data-toggle' => "modal", 'data-target' => "#modal4" }
+  %a.btn-invisible.btn-circle-vert{ 'data-toggle' => "modal", 'data-target' => "#modal4" }
     = image_tag "step4_vert.png", class: 'img-responsive img-center'
   %a.btn-invisible.btn-circle-vert{ :href => '/advertise' }
     = image_tag "step5_vert.png", class: 'img-responsive img-center'
@@ -41,7 +41,7 @@
     = link_to  existing_vendors_path do
       = image_tag "pirate.jpg", class: 'img-responsive center-block', width: '90%'
     %h4 
-      = link_to "Benefits and ideas for existing brick-and mortare business", existing_vendors_path
+      = link_to "Benefits and ideas for existing brick and mortare business", existing_vendors_path
   .col-sm-4.col-xs-12
     = link_to  existing_online_path do
       = image_tag "crafts.jpg", class: 'img-responsive center-block', width: '90%'
@@ -56,17 +56,17 @@
 .col-xs-12.row.text-center
   .col-sm-4.col-xs-12
     = link_to  content_providers_path do
-      = image_tag "droid_baby.jpg", class: 'img-responsive center-block', width: '90%'
+      = image_tag "online_convetnt_providers.jpg", class: 'img-responsive center-block', width: '90%'
     %h4 
       = link_to "Benefits for on-line content providers", content_providers_path
   .col-sm-4.col-xs-12
     = link_to  beginners_path do
-      = image_tag "myaso.jpg", class: 'img-responsive center-block', width: '90%'
+      = image_tag "for_beginners.jpg", class: 'img-responsive center-block', width: '90%'
     %h4 
       = link_to "Benefits for begginning vendors", beginners_path
   .col-sm-4.col-xs-12
     = link_to  unsure_path do
-      = image_tag "onlineBiz.jpg", class: 'img-responsive center-block', width: '90%'
+      = image_tag "for_unsure.jpg", class: 'img-responsive center-block', width: '90%'
     %h4 
       = link_to "For those who is still unsure", unsure_path
 

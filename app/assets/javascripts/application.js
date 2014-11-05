@@ -11,12 +11,13 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery_ujs
 //= require bootstrap-sprockets
 //= require turbolinks
+//= require jquery_ujs
+//= require jquery.turbolinks
 //= require_tree .
 
-$(document).ready(function() {
+$(document).ready (function() {
 
 	// ----------------
 	// smoth scrolling after clicking anchor link
@@ -71,7 +72,7 @@ $(document).ready(function() {
 	$navbar_menu =  $('#menu');
 	$(window).scroll(function(){
 		if (window.innerWidth > 760) {
-		    if ($(window).scrollTop() > 150) {
+		    if ($('body').scrollTop() > 150) {
 		        if ($header.data('size') == 'big') {
 			            $header.data('size','small').stop().animate( {
 			            	'min-height': '52px'
