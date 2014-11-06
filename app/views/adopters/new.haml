@@ -17,26 +17,40 @@
         %br
         %li More importantly we’ll listen intently to your feedback and shape Androcommerce around your personal needs.
 
+    %a#form{ :name => 'form' }
     %br
     %p Not bad, huh?
     %br
     %h4 So, we are ready to roll. You are ready to jump in? Just fill the form:
 
+
 .col-sm-5.hidden-xs
   = image_tag "flag-acomm1.gif", class: 'img-responsive'
 
+
+
 .col-xs-12
-  = form_for @adopter do |f|
+
+  = form_for @adopter, :url => adopters_path(@adopter, :anchor => 'form') do |f|
     .col-sm-6
       .form-group
         = f.label :name
+        .red 
+          *
+          = "- " + @adopter.errors[:name][0] if @adopter.errors[:name][0]
         = f.text_field :name, class: 'form-control'
       .form-group
         = f.label :country
+        .red 
+          *
+          = "- " + @adopter.errors[:country][0] if @adopter.errors[:country][0]
         = f.text_field :country, class: 'form-control'
     .col-sm-6
       .form-group
         = f.label :email
+        .red 
+          *
+          = "- " + @adopter.errors[:email][0] if @adopter.errors[:email][0]
         = f.email_field :email, class: 'form-control'
       .form-group
         = f.label :city
@@ -62,7 +76,9 @@
         = f.text_field :website, class: 'form-control'
     
     .col-sm-6
-      %br
+      Fields marked with 
+      .red * 
+      are mandatory
       %br
       %br
       = f.submit "Register and turn on engines of Androcommerce", class: 'btn-default btn-lg btn-enroll'

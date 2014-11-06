@@ -1,5 +1,7 @@
 class PagesController < ApplicationController
 
+	layout "for_vendors_layout", only: [:for_vendors]
+
 	def home
 	end
 

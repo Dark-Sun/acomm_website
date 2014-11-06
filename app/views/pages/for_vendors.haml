@@ -11,7 +11,7 @@
     %a.btn-invisible{ 'data-toggle' => "modal", 'data-target' => "#modal1" }
       = image_tag "step1.png", class: 'img-responsive img-inline'
   .col-step-circle.col-no-margin
-    %a.btn-invisible{ 'data-toggle' => "modal", 'data-target' => "#" }
+    %a.btn-invisible{ 'data-toggle' => "modal", 'data-target' => "#modal2" }
       = image_tag "step2.png", class: 'img-responsive img-inline'
   .col-step-circle.col-no-margin
     %a.btn-invisible{ 'data-toggle' => "modal", 'data-target' => "#modal3" }
@@ -26,7 +26,7 @@
 .row.visible-xs
   %a.btn-invisible.btn-circle-vert{ 'data-toggle' => "modal", 'data-target' => "#modal1" }
     = image_tag "step1_vert.png", class: 'img-responsive img-center'
-  %a.btn-invisible.btn-circle-vert{ 'data-toggle' => "modal", 'data-target' => "#" }
+  %a.btn-invisible.btn-circle-vert{ 'data-toggle' => "modal", 'data-target' => "#modal2" }
     = image_tag "step2_vert.png", class: 'img-responsive img-center'
   %a.btn-invisible.btn-circle-vert{ 'data-toggle' => "modal", 'data-target' => "#modal3" }
     = image_tag "step3_vert.png", class: 'img-responsive img-center'
@@ -73,27 +73,51 @@
 %br
 
 .modal.fade#modal1
-  .modal-dialog
+  .modal-dialog{ :style => "width: 350px; margin: 0 auto; margin-top: 100px;" }
     .modal-content
+      .modal-header
+        %button{ :type => "button", :class => "close",  'data-dismiss' => "modal" }
+          %span{ 'aria-hidden' => "true" }
+            &times;
+            %span.sr-only
+              Close
       .modal-body
         %h4 We're in Stage of Early Adopters.
         %h4 Please subscribe to Early Adopters Program to receive Vendor App for Android.
 
 .modal.fade#modal2
-  .modal-dialog
+  .modal-dialog{ :style => "width: 250px;  margin: 0 auto; margin-top: 100px;" }
     .modal-content
+      .modal-header
+        %button{ :type => "button", :class => "close",  'data-dismiss' => "modal" }
+          %span{ 'aria-hidden' => "true" }
+            &times;
+            %span.sr-only
+              Close
       .modal-body
-        Create new shop screenshot
+        = image_tag "add_shop_screenshot.png", height: 400, class: 'img-center'
 
 .modal.fade#modal3
-  .modal-dialog{ :style => "width: 250px; margin: 0 auto;" }
+  .modal-dialog{ :style => "width: 250px;  margin: 0 auto; margin-top: 100px;" }
     .modal-content
+      .modal-header
+        %button{ :type => "button", :class => "close",  'data-dismiss' => "modal" }
+          %span{ 'aria-hidden' => "true" }
+            &times;
+            %span.sr-only
+              Close
       .modal-body
         = image_tag "Andr666s.png", height: 400, class: 'img-center'
 
 .modal.fade#modal4
-  .modal-dialog
+  .modal-dialog{ :style => "width: 350px; margin: 0 auto;  margin-top: 100px;" }
     .modal-content
+      .modal-header
+        %button{ :type => "button", :class => "close",  'data-dismiss' => "modal" }
+          %span{ 'aria-hidden' => "true" }
+            &times;
+            %span.sr-only
+              Close
       .modal-body
         %h4 We're in stage of Early Adopters. 
         %h4 If you will be selected to this group - your Android storefront will be generated automatically

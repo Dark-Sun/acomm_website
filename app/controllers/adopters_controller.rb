@@ -12,10 +12,17 @@ class AdoptersController < ApplicationController
 		end
 	end
 
+	def new
+		@adopter = Adopter.new
+	end
+
 	def create
 		@adopter = Adopter.create(adopter_params)
-		@adopter.save
-		redirect_to root_path
+		if @adopter.save
+			redirect_to root_path
+		else
+			render :new, :anchor => 'form'
+		end
 	end
 
 	private

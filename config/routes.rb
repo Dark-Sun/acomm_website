@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get '/existing_vendors'   => 'pages#existing_vendors',  as: 'existing_vendors'
   get '/learn'              => 'pages#learn',             as: 'learn'
   get '/advertise'          => 'pages#advertise',         as: 'advertise'
-  get '/enroll'             => 'pages#enroll',            as: 'enroll'
+  get '/enroll'             => 'adopters#new',            as: 'enroll'
   get '/existing_online'    => 'pages#existing_online',   as: 'existing_online'
   get '/service_providers'  => 'pages#service_providers', as: 'service_providers'
   get '/content_providers'  => 'pages#content_providers', as: 'content_providers'
