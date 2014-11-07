@@ -34,6 +34,12 @@ body {
 		border: 1px solid red;
 	}
 }
+
+p {
+	word-wrap: normal;
+	word-break: keep-all;
+}
+
 #content {
 	padding-top: 88px;
 	padding-left: 12%;
@@ -128,7 +134,10 @@ ul.bulleted-list > li {
 
 .img-inline {
 	display: inline-block;
+	*display: inline;
+	zoom: 1;
 }
+
 
 .btn-invisible {
 	background: transparent;
@@ -155,6 +164,8 @@ ul.bulleted-list > li {
 .col-step-circle {
 	width: 19%;
 	display: inline-block;
+	zoom: 1;
+	*display: inline;
 	padding-bottom: 3px !important;
 	border-bottom: 2px solid white;
 	a {
@@ -256,6 +267,12 @@ div.col-no-margin {
 	vertical-align: middle;
 	width: 30px;
 }
+
+
+.text-small {
+	font-size: 12px;
+}
+
 
 .step-circle {
 	display: inline-block;
@@ -380,12 +397,12 @@ button.navbar-toggle {
 }
 
 #menu {
-	padding-top: 15px;
+	padding-top: 18px;
 	ul > li > a {
 		text-transform: uppercase;
 		padding: 0.5em 1em;
-		font-size: 17px;
-		line-height: 35px;
+		font-size: 19px;
+		line-height: 32px;
 		height: 52px;
 		vertical-align: middle;
 		transition: 0.2s;
@@ -406,15 +423,30 @@ button.navbar-toggle {
 }
 
 .footer-copyright {
-	padding-top: 80px;
+	padding-top: 50px;
+}
+
+@media (max-width: 770px) {
+	.footer-copyright {
+		padding-top: 80px;
+	}
 }
 
 .footer-buttons {
 	padding-top: 70px;
 	a > em {
 		font-size: 25px;
-		color: white;
+		color: white ;
 		&:hover { color: $primary-color; }
 		transition: 0.4s;
+	}
+}
+
+@media (max-width: 700px) {
+	.footer-buttons {
+		padding-top: 75px;
+		a > em  {
+		font-size: 20px;
+		}
 	}
 }

@@ -88,7 +88,7 @@ $(document).ready (function() {
 			            	'min-height': '88px'
 			            }, 150);
 			            $navbar_image_big.animate( {'padding-top': '15'}, 150);
-			            $navbar_menu.animate( {'padding-top': '15'}, 150);
+			            $navbar_menu.animate( {'padding-top': '18'}, 150);
 			            // $header.removeClass('navbar-small')
 		        } 	         
 		    }
