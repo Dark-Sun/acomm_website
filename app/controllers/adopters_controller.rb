@@ -19,6 +19,7 @@ class AdoptersController < ApplicationController
 	def create
 		@adopter = Adopter.create(adopter_params)
 		if @adopter.save
+			flash[:success] = "You have successfully registered"
 			redirect_to root_path
 		else
 			render :new, :anchor => 'form'

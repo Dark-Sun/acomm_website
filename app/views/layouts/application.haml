@@ -43,5 +43,11 @@
   %body
     = render 'layouts/navbar'
     #content.clearfix
+      - if flash[:success]
+        .flash-success
+          = flash[:success]
+          .close
+            ×
+
       = yield
     = render 'layouts/footer'

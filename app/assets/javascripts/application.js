@@ -102,4 +102,8 @@ $(document).ready (function() {
 		    }
 		 }
 	});
+
+	$('.close').click(function() {
+		$('.close').parent().hide(200);
+	});
 });

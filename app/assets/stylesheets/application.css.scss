@@ -1,3 +1,4 @@
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -35,6 +36,18 @@ body {
 	}
 }
 
+.flash-success {
+	width: 90%;
+	max-width: 400px;
+	margin: 0 auto;
+	background-color: white;
+	border-bottom: 1px solid #7CB342;
+	padding: 10px;
+	color: #7CB342;
+	font-size: 24px;
+	text-align: center;
+}
+
 p {
 	word-wrap: normal;
 	word-break: keep-all;
@@ -42,8 +55,8 @@ p {
 
 #content {
 	padding-top: 88px;
-	padding-left: 12%;
-	padding-right: 12%;
+	padding-left: 7%;
+	padding-right: 7%;
 }
 @media (max-width: 765px) {
 	#content {
@@ -73,6 +86,10 @@ div.text > ul > li {
 
 .img-acomm {
 	margin-left: -700px;
+}
+
+.modal-no-margin {
+	margin-top: 0 !important;
 }
 
 .form-control {
@@ -183,7 +200,7 @@ ul.bulleted-list > li {
 	max-width: 600px;
 	width: 100%;
 	margin: 0 auto;
-	margin-top: 50px;
+	margin-top: 10px;
 }
 .video-container {
     position: relative;
@@ -233,11 +250,17 @@ div.col-no-margin {
 		background-color: #7CB342;
 		color: white;
 	}
+	&:focus {
+		border: 1px solid #8BC34A;
+		background-color: #8BC34A;
+		color: white;
+	}
 }
 
 .btn-lg {
 	font-size: 24px;
 	line-height: 24px;
+	outline: none;
 }
 
 .btn-enroll {
@@ -340,8 +363,8 @@ a {
 
 /* navbar */ 
 .navbar {
-	padding-left: 12%;
-	padding-right: 12%;
+	padding-left: 7%;
+	padding-right: 7%;
 	border-radius: none;
 }
 
@@ -357,18 +380,18 @@ button.navbar-toggle {
 
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1131px) {
 	.navbar-header {
-		max-width: 40%;
+		max-width: 35%;
 		margin-top: 10px;
 		display: inline-block;
 	}
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1131px) {
 	.navbar-header a > img {
 		max-width: 100%;
-		margin-top: 10px;
+		margin-top: 0px;
 		display: inline-block;
 	}
 }
@@ -407,6 +430,12 @@ button.navbar-toggle {
 		vertical-align: middle;
 		transition: 0.2s;
 		&:hover { color: $primary-color; }
+	}
+}
+
+@media (max-width: 866px) {
+	#menu > ul > li > a {
+		font-size: 16px;
 	}
 }
 

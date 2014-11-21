@@ -1,5 +1,5 @@
 
-= render 'shared/enroll_button'
+=# render 'shared/enroll_button'
 
 .youtube-container.hidden-xs
   .video-container
@@ -7,7 +7,7 @@
 
 %p
   %br
-  We give away an advanced e&#8209;commerce platform for mobile devices. We generate for the vendor her very own store&#8209;front app. By offering it for free we help small vendors and startups to give their business a global presence at zero upfront cost. We leverage inherent flexibility and social aspect of smart devices to create innovative marketing strategy, build strong vendor&#8209;customer bond. Foster business retention. Facilitate constant presence of the customer in your store, be it online or offline, for goods or services.
+  We give away an advanced e&#8209;commerce platform for mobile devices. We generate for vendors their very own store&#8209;front app. By offering it for free we help small vendors and startups to give their business a global presence at zero upfront cost. We leverage inherent flexibility and social aspect of smart devices to create innovative marketing strategy, build strong vendor&#8209;customer bond, foster business retention. We facilitate constant presence of the customer in your store, be it online or offline, for goods or services.
 %p
   = link_to "Sign up", enroll_path
   to be among the first Androcommerce™
@@ -31,13 +31,16 @@
       = link_to "Advertise your storefront", advertise_path
 .row.text-center
   .col-sm-4.col-xs-12
-    = image_tag "Pear666s.png", class: 'img-responsive img-phone'
+    %a.btn-invisible.btn-circle-vert{ 'data-toggle' => "modal", 'data-target' => "#modal1" }
+      = image_tag "Pear666s.png", class: 'img-responsive img-phone'
     %h3 Your storefront on iPhone
   .col-sm-4.col-xs-12
-    = image_tag "Andr666s.png", class: 'img-responsive img-phone'
+    %a.btn-invisible.btn-circle-vert{ 'data-toggle' => "modal", 'data-target' => "#modal2" }
+      = image_tag "Andr666s.png", class: 'img-responsive img-phone'
     %h3 Your storefront on Android
   .col-sm-4.col-xs-12
-    = image_tag "warehouse.png", class: 'img-responsive img-phone'
+    %a.btn-invisible.btn-circle-vert{ 'data-toggle' => "modal", 'data-target' => "#modal3" }
+      = image_tag "warehouse.png", class: 'img-responsive img-phone'
     %h3 Your vendor app on Android
 
 .row.text-center
@@ -47,3 +50,39 @@
 
 
 = render 'shared/enroll_button'
+
+.modal.fade#modal1
+  .modal-dialog.modal-no-margin{ :style => "width: 300px;  margin: 0 auto; margin-top: 100px;" }
+    .modal-content
+      .modal-header
+        %button{ :type => "button", :class => "close",  'data-dismiss' => "modal" }
+          %span{ 'aria-hidden' => "true" }
+            &times;
+            %span.sr-only
+              Close
+      .modal-body
+        = image_tag "Pear666s.png", height: 500, class: 'img-center'
+
+.modal.fade#modal2
+  .modal-dialog.modal-no-margin{ :style => "width: 300px;  margin: 0 auto; margin-top: 100px;" }
+    .modal-content
+      .modal-header
+        %button{ :type => "button", :class => "close",  'data-dismiss' => "modal" }
+          %span{ 'aria-hidden' => "true" }
+            &times;
+            %span.sr-only
+              Close
+      .modal-body
+        = image_tag "Andr666s.png", height: 500, class: 'img-center'
+
+.modal.fade#modal3
+  .modal-dialog.modal-no-margin{ :style => "width: 300px;  margin: 0 auto; margin-top: 100px;" }
+    .modal-content
+      .modal-header
+        %button{ :type => "button", :class => "close",  'data-dismiss' => "modal" }
+          %span{ 'aria-hidden' => "true" }
+            &times;
+            %span.sr-only
+              Close
+      .modal-body
+        = image_tag "warehouse.png", height: 500, class: 'img-center'

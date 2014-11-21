@@ -8,6 +8,8 @@
 
     .collapse.navbar-collapse.navbar-right#menu
       %ul.nav.navbar-nav
+        %li{ :class => ("active" if params[:action] == 'learn') } 
+          = link_to 'Learn', learn_path
         %li{ :class => ("active" if params[:action] == 'for_vendors') } 
           = link_to 'For Vendors', for_vendors_path
         %li{ :class => ("active" if params[:action] == 'pricing') } 
