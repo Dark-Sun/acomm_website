@@ -88,8 +88,12 @@ div.text > ul > li {
 	margin-left: -700px;
 }
 
-.modal-no-margin {
-	margin-top: 0 !important;
+.modal-margin {
+	margin-top: 20px !important;
+}
+
+.modal-index-page {
+	max-height: 70%;
 }
 
 .form-control {

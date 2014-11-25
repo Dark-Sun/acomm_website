@@ -1,9 +1,14 @@
 #footer
   .col-xs-6.footer-copyright
-    © 2014 DroidBrew
+    © 2014 
+    = link_to "DroidBrew", 'http://droidbrew.co.uk', class: 'footer-link'
     %br
     .text-small.hidden-xs
       Androcommerce is registered trademark of DroidBrew Ltd which is registered in England no. 9163158. Registered office: 9 Belmont Close, London, E4 9UL.
+      %br
+      = link_to "Privacy and Cookies", privacy_path, class: 'footer-link' 
+      |
+      = link_to "Terms and Conditions", terms_path, class: 'footer-link'
   .col-xs-6.footer-buttons
     .pull-right
       %a{ href: "https://twitter.com/droidbrew", target: '_blank' }

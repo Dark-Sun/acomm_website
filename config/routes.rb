@@ -14,6 +14,9 @@ Rails.application.routes.draw do
   get '/content_providers'  => 'pages#content_providers', as: 'content_providers'
   get '/begginers'          => 'pages#begginers',         as: 'beginners'
   get '/unsure'             => 'pages#unsure',            as: 'unsure'
+
+  get '/privacy_and_cookies'  => 'pages#privacy_and_cookies', as:  'privacy'
+  get '/terms_and_conditions' => 'pages#terms_and_conditions', as: 'terms'
   
   get '/update_browser'    => 'pages#update_browser',     as: 'update_browser'
   
