@@ -1,12 +1,13 @@
-
-=# render 'shared/enroll_button'
+= image_tag "acomm_infographics.png", class: 'img-responsive img-center hidden-xs'
+= image_tag "poster.png", class: 'img-responsive img-center'
 
 .youtube-container.hidden-xs
   .video-container
     %iframe{ :width => '533px', :height => "300", :src => "//www.youtube.com/embed/LaepmWJ7OyY?modestbranding=1&rel=0&showinfo=0&nologo=1",:frameborder => "0", :allowfullscreen => "true", :theme => "light" }
+%h2
+  Androcommerce is freemium mobile-commerce platform for small business:
 
 %p
-  %br
   We give away an advanced e&#8209;commerce platform for mobile devices. We generate for vendors their very own store&#8209;front app. By offering it for free we help small vendors and startups to give their business a global presence at zero upfront cost. We leverage inherent flexibility and social aspect of smart devices to create innovative marketing strategy, build strong vendor&#8209;customer bond, foster business retention. We facilitate constant presence of the customer in your store, be it online or offline, for goods or services.
 %p
   = link_to "Sign up", enroll_path
