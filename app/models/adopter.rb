@@ -4,6 +4,8 @@ class Adopter < ActiveRecord::Base
 	validates :email,   presence: true
 	validates :country, presence: true
 
+	validates :terms_of_service, acceptance: true
+
 	validates_format_of :email , :with => /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
 	
 	def self.to_csv(options = {})
