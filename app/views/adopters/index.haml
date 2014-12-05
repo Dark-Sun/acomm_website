@@ -12,6 +12,7 @@
       %th.text-center Digital Content seller?
       %th.text-center Future or beginning vendor?
       %th.text-center Created
+      %th.text-center Promocode
     %tbody
       - @adopters.each do |adopter|
         %tr
@@ -35,5 +36,7 @@
             = adopter.future_or_beginning_vendor
           %td 
             = adopter.created_at
+          %td 
+            = adopter.promocode
             
      
