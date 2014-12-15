@@ -41,6 +41,14 @@
 
     %meta{:name => "Keywords", :content => "Androcomerce, e-commerce, mobile e-commerce, mobile commerce, mobile shop, app, e-commerce platform, mobile storefron, droidbrew, android, ios"}
   %body
+    %noscript
+      %iframe{:height => "0", :src => "//www.googletagmanager.com/ns.html?id=GTM-T2NCS5", :style => "display:none;visibility:hidden", :width => "0"}
+    :javascript
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-T2NCS5');
     = render 'layouts/navbar'
     #content.clearfix
       - if flash[:success]
