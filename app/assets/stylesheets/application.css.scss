@@ -384,7 +384,7 @@ button.navbar-toggle {
 
 }
 
-@media (max-width: 1131px) {
+@media (max-width: 1340px) {
 	.navbar-header {
 		max-width: 35%;
 		margin-top: 10px;
@@ -392,7 +392,7 @@ button.navbar-toggle {
 	}
 }
 
-@media (max-width: 1131px) {
+@media (max-width: 1340px) {
 	.navbar-header a > img {
 		max-width: 100%;
 		margin-top: 0px;
@@ -437,9 +437,15 @@ button.navbar-toggle {
 	}
 }
 
-@media (max-width: 866px) {
+@media (max-width: 1340px) {
 	#menu > ul > li > a {
 		font-size: 16px;
+	}
+}
+
+@media (max-width: 1000px) {
+	#menu > ul > li > a {
+		font-size: 14px;
 	}
 }
 

@@ -14,6 +14,8 @@
           = link_to 'For Vendors', for_vendors_path
         %li{ :class => ("active" if params[:action] == 'pricing') } 
           = link_to 'Pricing', pricing_path
+        %li.hidden-sm
+          = link_to 'Other products', 'http://droidbrew.co.uk/products'
         %li{ :class => ("active" if params[:action] == 'contact_us') } 
           = link_to 'Contact us', 'http://droidbrew.co.uk'
 }
