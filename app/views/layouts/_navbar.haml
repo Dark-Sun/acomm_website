@@ -10,12 +10,14 @@
       %ul.nav.navbar-nav
         %li{ :class => ("active" if params[:action] == 'learn') } 
           = link_to 'Learn', learn_path
-        %li{ :class => ("active" if params[:action] == 'for_vendors') } 
-          = link_to 'For Vendors', for_vendors_path
-        %li{ :class => ("active" if params[:action] == 'pricing') } 
-          = link_to 'Pricing', pricing_path
-        %li.hidden-sm
-          = link_to 'Other products', 'http://droidbrew.co.uk/products'
+        / %li{ :class => ("active" if params[:action] == 'for_vendors') } 
+        /   = link_to 'For Vendors', for_vendors_path
+        %li
+          = link_to 'Market', 'http://market.androcommerce.com'
+        %li
+          = link_to 'Pricing', 'http://droidbrew.co.uk/products' #pricing_path
+        / %li.hidden-sm
+        /   = link_to 'Other products', 'http://droidbrew.co.uk/products'
         %li{ :class => ("active" if params[:action] == 'contact_us') } 
           = link_to 'Contact us', 'http://droidbrew.co.uk'
 }
